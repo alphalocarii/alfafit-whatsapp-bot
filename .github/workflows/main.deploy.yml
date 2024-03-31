@@ -20,7 +20,7 @@ jobs:
       - name: Deploy to Droplet
         run: |
           ssh -o "StrictHostKeyChecking=no" root@165.22.37.71 << 'EOF'
-            cd /path/to/your/app
+            cd /var/www/alfafitpro_bot
             git pull
             npm install
             pm2 restart all
