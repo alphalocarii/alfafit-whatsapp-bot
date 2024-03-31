@@ -19,7 +19,7 @@ jobs:
 
       - name: Deploy to Droplet
         run: |
-          ssh -o "StrictHostKeyChecking=no" root@TU_DROPLET_IP << 'EOF'
+          ssh -o "StrictHostKeyChecking=no" root@165.22.37.71 << 'EOF'
             cd /path/to/your/app
             git pull
             npm install
