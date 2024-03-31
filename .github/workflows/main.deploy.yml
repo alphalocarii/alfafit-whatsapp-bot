@@ -20,7 +20,7 @@ jobs:
       - name: Deploy to Droplet
         run: |
           ssh -o "StrictHostKeyChecking=no" root@165.22.37.71 << 'EOF'
-            cd /var/www/alfafitpro_bot
+            cd /var/www/alfafit-whatsapp-bot
             git pull
             /root/.nvm/versions/node/v21.7.1/bin/npm install
             /root/.nvm/versions/node/v21.7.1/bin/pm2 restart all
